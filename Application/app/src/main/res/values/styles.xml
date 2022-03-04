@@ -1,0 +1,61 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="GeneralNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorAccent">#2196F3</item>
+    </style>
+    <style name="DriverActionBar" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#DFAA0A</item>
+        <item name="colorPrimaryDark">#DFAA0A</item>
+        <item name="colorAccent">#DFAA0A</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyTheme</item>
+    </style>
+    <style name="MyTheme" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more</item>
+    </style>
+    <style name="DriverNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#DFAA0A</item>
+        <item name="colorPrimaryDark">#DFAA0A</item>
+        <item name="colorAccent">#DFAA0A</item>
+    </style>
+    <style name="LoginNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+    <style name="AlertDialogThem" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#DFAA0A</item>
+    </style>
+    <style name="paymentDone" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#32c671</item>
+        <item name="colorPrimaryDark">#32c671</item>
+        <item name="colorAccent">#32c671</item>
+    </style>
+    <style name="TpoliceActionBar" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0B8595</item>
+        <item name="colorPrimaryDark">#0B8595</item>
+        <item name="colorAccent">#0B8595</item>
+    </style>
+    <style name="TpoliceNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#0B8595</item>
+        <item name="colorPrimaryDark">#0B8595</item>
+        <item name="colorAccent">#0B8595</item>
+    </style>
+</resources>

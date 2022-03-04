@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tplistGroup"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="36dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/times_new_roman"
+        android:background="@color/TpoliceThemColor"
+        android:textColor="#FFFFFF"
+        android:text="group"/>
+
+</RelativeLayout>

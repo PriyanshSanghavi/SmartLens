@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:id="@+id/dlistChild"
+        android:fontFamily="@font/times_new_roman"
+        android:padding="4dp"
+        android:text="group"
+        android:background="#fef0c3"
+        android:textColor="#4e5861"/>
+</RelativeLayout>

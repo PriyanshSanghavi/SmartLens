@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TPolice.Activity.TpoliceProfilePic">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tppp_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/TpoliceThemColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tppp_pic"
+            android:layout_gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_tp_person"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/TpoliceThemColor"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tppp_camera"
+            android:text="Open Camera"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/TpoliceThemColor"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tppp_save"
+            android:text="Save"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:background="@drawable/btn_style3"
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TPolice.Activity.TpoliceViewDdocuments">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tpvdd_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/TpoliceThemColor"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tpvdd_toolbar"
+        android:text="Driver Name : "
+        android:layout_margin="16dp"
+        android:drawableStart="@drawable/ic_person"
+        android:drawableTint="#237BB6"
+        android:drawablePadding="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/tpvdd_tv"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tpvdd_tv"
+        android:background="#F6F8FA"
+        android:id="@+id/tpvdd_document"/>
+
+</RelativeLayout>

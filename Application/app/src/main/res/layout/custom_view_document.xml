@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:id="@+id/doc_view">
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="90sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:scaleType="fitStart"
+        android:layout_marginRight="16sp"
+        android:id="@+id/dvd_pic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dvd_title"
+        android:layout_marginTop="16sp"
+        android:layout_marginRight="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/times_new_roman"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/dvd_pic"
+        android:text="Title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dvd_expdate"
+        android:layout_marginTop="16sp"
+        android:layout_marginRight="16sp"
+        android:fontFamily="@font/times_new_roman"
+        android:text="Exp Date :"
+        android:layout_toRightOf="@+id/dvd_pic"
+        android:layout_below="@+id/dvd_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dvd_vstatus"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/times_new_roman"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="Verification :"
+        android:layout_below="@+id/dvd_pic"/>
+
+</RelativeLayout>

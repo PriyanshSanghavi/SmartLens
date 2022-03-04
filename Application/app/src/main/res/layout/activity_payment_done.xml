@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.Activity.PaymentDone">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/pd_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/correct"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Done!"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pd_img"
+        android:textColor="#32c671"
+        android:id="@+id/tv1"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="36dp"
+        android:id="@+id/tv2"
+        android:layout_below="@id/tv1"
+        android:text="Memo Id :"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="36dp"
+        android:text="Amount :"
+        android:id="@+id/tv3"
+        android:layout_below="@id/tv2"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv4"
+        android:layout_below="@id/tv3"
+        android:layout_marginLeft="36dp"
+        android:text="Payment Method :"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="226dp"
+        android:text="0"
+        android:id="@+id/pd_mid"
+        android:layout_below="@id/tv1"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="226dp"
+        android:text="0.0"
+        android:id="@+id/pd_amount"
+        android:layout_below="@id/pd_mid"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="226dp"
+        android:text="Debit/Credit Card"
+        android:id="@+id/pd_method"
+        android:layout_below="@id/pd_amount"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_payment"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pd_method"
+        android:layout_marginTop="80dp"
+        android:id="@+id/pd_home"
+        android:text="HOME"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

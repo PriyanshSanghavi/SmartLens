@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pdf_view">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/times_new_roman"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/tpvc_title"
+        android:text="Title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/times_new_roman"
+        android:text="Date:"
+        android:layout_below="@+id/tpvc_title"
+        android:id="@+id/tpvc_date"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

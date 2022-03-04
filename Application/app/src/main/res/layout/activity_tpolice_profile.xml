@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TPolice.Activity.TpoliceProfile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tpp_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/TpoliceThemColor"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/limg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="152dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/tpolice_profile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tp_pic"
+            android:layout_gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_tp_person"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/TpoliceThemColor"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_take_pic"
+            android:background="@android:color/transparent"
+            android:text="Take a Pic"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/TpoliceThemColor"
+            android:textSize="25dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Name:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_name"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableTint="@color/TpoliceThemColor"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="10dp"
+            android:padding="16dp"
+            android:hint="Name"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Birth Date:"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/tp_bdate"
+            android:background="@color/TpoliceThemColor"
+            android:textColor="#FFFFFF"
+            android:text="Select Birth Date"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:drawableTint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:text="Gender:"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:id="@+id/tp_gender"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:id="@+id/tp_male"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="MALE" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="FEMALE"
+                android:id="@+id/tp_female"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="OTHER"
+                android:id="@+id/tp_other"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Email:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:id="@+id/tp_email"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Phone:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/tp_phone"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Branch:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_branch"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_branch"
+            android:hint="Branch"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Join Date:"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/tp_jdate"
+            android:background="@color/TpoliceThemColor"
+            android:textColor="#FFFFFF"
+            android:text="Select Join Date"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:drawableTint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Address:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_address"
+            android:drawableStart="@drawable/ic_home"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:drawablePadding="10dp"
+            android:hint="Address"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="City:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_city"
+            android:drawablePadding="10dp"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:drawableStart="@drawable/ic_city"
+            android:hint="City"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="State:"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:id="@+id/tp_state"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:background="@drawable/btn_style3"
+            android:id="@+id/tp_edit_profile"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

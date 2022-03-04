@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Driver.DriverHomeFrag">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="6dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="0"
+        app:iss_period="1000"
+        app:iss_corner_radius="5"
+        app:iss_placeholder="@drawable/d1"
+        android:id="@+id/driver_slider">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:src="@drawable/ud"
+        android:layout_margin="10dp"
+        android:id="@+id/ud"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:src="@drawable/vd"
+        android:id="@+id/vd"
+        android:layout_margin="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:src="@drawable/vm"
+        android:id="@+id/vm"
+        android:layout_margin="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:src="@drawable/rateus"
+        android:id="@+id/rateus"
+        android:layout_margin="10dp"/>
+</LinearLayout>
+</ScrollView>

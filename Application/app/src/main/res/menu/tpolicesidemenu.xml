@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/tphome"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/tprofile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        </group>
+    <group android:id="@+id/group2"
+        android:checkableBehavior="none">
+    <item android:title="Actions">
+        <menu>
+
+            <item
+                android:id="@+id/check_id"
+                android:icon="@drawable/ic_scan"
+                android:title="Check Id" />
+            <item
+                android:id="@+id/send_memo"
+                android:icon="@drawable/ic_memo"
+                android:title="Send Memo" />
+            <item
+                android:id="@+id/submit_attendance"
+                android:icon="@drawable/ic_attendance"
+                android:title="Submit Attendance" />
+            <item
+                android:id="@+id/apply_Leave"
+                android:icon="@drawable/ic_leave"
+                android:title="Apply for Leave" />
+
+        </menu>
+    </item>
+    </group>
+    <group android:id="@+id/group3"
+        android:checkableBehavior="none">
+    <item android:title="View">
+        <menu>
+
+            <item
+                android:id="@+id/view_attendance"
+                android:icon="@drawable/ic_view_attendance"
+                android:title="Attendance" />
+            <item
+                android:id="@+id/view_Leave"
+                android:icon="@drawable/ic_leave"
+                android:title="Leave Applications" />
+            <item
+                android:id="@+id/view_memo"
+                android:icon="@drawable/ic_memo"
+                android:title="Memo" />
+            <item
+                android:id="@+id/view_circular"
+                android:icon="@drawable/ic_email"
+                android:title="Circular" />
+        </menu>
+    </item>
+    </group>
+    <group android:id="@+id/group4"
+        android:checkableBehavior="none"><item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+        <item
+            android:id="@+id/thelp"
+            android:icon="@drawable/ic_help"
+            android:title="Help" />
+    </group>
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TPolice.Activity.TpoliceCheckid">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tpcid_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/TpoliceThemColor"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <ImageView
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        android:id="@+id/tpcid_pic"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_tp_camera"
+        android:padding="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tpcid_camera"
+        android:text="Open Camera"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/TpoliceThemColor"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tpcid_submit"
+        android:text=" Find Documents "
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/btn_style3"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

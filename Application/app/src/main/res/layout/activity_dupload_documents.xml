@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dud_sv"
+    tools:context=".Driver.Activity.DuploadDocumentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ud_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/DriverThemColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/document_type"
+            android:layout_gravity="center_horizontal"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_error"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/dcp_password_msg"
+            android:layout_marginRight="16dp"
+            android:text="You can not Upload Driving Licence more than once, if you still trying to do this your old driving licence data will be Overwrite."
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dud_pic"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_camera"
+            android:padding="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dud_camera"
+            android:text="Select Document"
+            android:padding="16dp"
+            android:textColor="@color/DriverThemColor"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/dud_expdate"
+            android:background="@color/DriverThemColor"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Select Document Expiry Date"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:drawableTint="#FFFFFF"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dud_save"
+        android:background="@drawable/btn_style1"
+        android:text="Upload"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="50dp"
+        app:icon="@drawable/ic_image"
+        app:iconGravity="textStart"
+        app:iconPadding="5dp"
+        android:visibility="invisible"
+        />
+    </LinearLayout>
+</ScrollView>

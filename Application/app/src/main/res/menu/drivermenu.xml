@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Delete Account Permanently"
+        android:id="@+id/driver_delete_account"/>
+    <item
+        android:title="Change Password"
+        android:id="@+id/driver_password_change"/>
+    <item
+        android:title="Logout"
+        android:id="@+id/driver_logout"/>
+</menu>

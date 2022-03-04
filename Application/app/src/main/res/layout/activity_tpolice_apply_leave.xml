@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tpal_sv"
+    tools:context=".TPolice.Activity.TpoliceApplyLeave">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tpal_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/TpoliceThemColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Application"
+            android:layout_marginTop="20dp"
+            android:textSize="40dp"
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:fontFamily="@font/omegle_regular" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tpal_leave_type"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:layout_margin="16dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:text="From Date:"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/tpal_fromdate"
+            android:background="@color/TpoliceThemColor"
+            android:textColor="#FFFFFF"
+            android:text="Select From Date"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:drawableTint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:text="To Date:"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/tpal_todate"
+            android:background="@color/TpoliceThemColor"
+            android:textColor="#FFFFFF"
+            android:text="Select To Date"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:drawableTint="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Type : "/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/r_bg"
+                android:layout_marginTop="10dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full"
+                    android:id="@+id/tpal_full"
+                    />
+                <RadioButton
+                    android:id="@+id/tpal_half"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="Half" />
+            </RadioGroup>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Reason For Leave"
+            android:padding="16dp"
+            android:id="@+id/tpal_reason"
+            android:gravity="top|left"
+            android:layout_margin="16dp"
+            android:lines="5"
+            android:background="@drawable/cp_style"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:background="@drawable/btn_style3"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tpal_apply"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>

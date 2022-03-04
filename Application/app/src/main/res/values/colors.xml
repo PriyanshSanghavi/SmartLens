@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DFAA0A</color>
+    <color name="colorPrimaryDark">#DFAA0A</color>
+    <color name="colorAccent">#237BB6</color>
+    <color name="DriverThemColor">#DFAA0A</color>
+    <color name="TpoliceThemColor">#0B8595</color>
+    <color name="ucrop_color_toolbar_widget">#FFFFFF</color>
+
+</resources>

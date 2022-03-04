@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smart Lens</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sign_in"><b><u>SIGN IN</u></b></string>
+    <string name="navigation_draw_open">open navigation drawer</string>
+    <string name="navigation_draw_close">close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

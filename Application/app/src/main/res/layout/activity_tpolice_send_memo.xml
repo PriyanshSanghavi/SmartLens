@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TPolice.Activity.TpoliceSendMemo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tpsm_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/TpoliceThemColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Driver Phone:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/tpsm_phone"
+            android:hint="Enter Driver Phone"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Vehical Number : "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tpsm_vnumber"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_car"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="10dp"
+            android:padding="16dp"
+            android:hint="Enter Vehicle Number"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Reason : "/>
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:lines="3"
+            android:gravity="top|left"
+            android:hint="Enter Reason"
+            android:background="@drawable/cp_style2"
+            android:id="@+id/tpsm_reason"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Amount :"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mony"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/tpsm_amount"
+            android:hint="Enter Amount"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="Area:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tpsm_area"
+            android:drawablePadding="10dp"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:drawableStart="@drawable/ic_location"
+            android:hint="Enter Area"
+            android:inputType="text" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"
+            android:text="City:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tpsm_city"
+            android:drawablePadding="10dp"
+            android:background="@drawable/cp_style2"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:drawableStart="@drawable/ic_city"
+            android:hint="City"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style3"
+            android:textSize="20dp"
+            android:text="SEND"
+            android:id="@+id/tpsm_send"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
