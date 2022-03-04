@@ -40,10 +40,6 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`ad_id`, `name`, `password`, `email`, `contact_no`) VALUES
-(1, 'Police Headquarters', '@Phq1234', 'Policeheadquarters@gmail.com', '9725555449'),
-(2, 'Priyansh Sanghavi', '@Pns4299', 'priyansh4299@gmail.com', '7878044995');
-
 -- --------------------------------------------------------
 
 --
@@ -61,16 +57,6 @@ CREATE TABLE `circular` (
 -- Dumping data for table `circular`
 --
 
-INSERT INTO `circular` (`c_id`, `title`, `file`, `date`) VALUES
-(1, 'New Traffic Rules', '../circular/816137163841.pdf', '2021-01-01'),
-(2, 'New Attendance System', '../circular/416137164721.pdf', '2021-02-12'),
-(3, 'Traffic Rules and Regulation', '../circular/416137165451.pdf', '2021-02-23'),
-(4, 'E-Challan Rules', '../circular/216137166561.pdf', '2021-03-08'),
-(5, 'Updated Traffic Rules', '../circular/316137167981.pdf', '2021-03-19'),
-(6, 'Covid 19 Guidelines', '../circular/416184566161.pdf', '2021-04-01'),
-(7, 'Driver Check Document Guidelines ', '../circular/516184567391.pdf', '2021-04-09'),
-(8, 'New Sop Guidelines', '../circular/116184568111.pdf', '2021-04-15');
-
 -- --------------------------------------------------------
 
 --
@@ -85,16 +71,6 @@ CREATE TABLE `document` (
   `exp_date` date NOT NULL,
   `verification` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `document`
---
-
-INSERT INTO `document` (`doc_id`, `user_id`, `title`, `file`, `exp_date`, `verification`) VALUES
-(1, 1, 'Front Side Driving License', '../document/1619323553161.jpg', '2038-09-23', 'approved'),
-(2, 1, 'Back Side Driving License', '../document/1619323637734.jpg', '2038-09-23', 'approved'),
-(3, 1, 'Front Side Vehical RC', '../document/1619323267919.jpg', '2024-09-30', 'approved'),
-(4, 1, 'Back Side Vehical RC', '../document/1619323390895.jpg', '2024-09-30', 'approved');
 
 -- --------------------------------------------------------
 
@@ -119,15 +95,6 @@ CREATE TABLE `memo` (
 --
 -- Dumping data for table `memo`
 --
-
-INSERT INTO `memo` (`m_id`, `tp_id`, `vehical_no`, `user_id`, `title`, `amount`, `date`, `time`, `area`, `city`, `p_status`) VALUES
-(1, 1, 'GJ13JJ4012', 1, 'Over speed', 500, '2021-03-02', '12:30 PM', '80 ft Road', 'Surendranagar', 1),
-(2, 1, 'GJ13SK2323', 1, 'puc missing,', 100, '2021-03-03', '12:50 PM', '80 ft Road', 'Surendranagar', 1),
-(3, 1, 'GJ12AA2020', 1, 'Puc Mising', 200, '2021-03-18', '10:09 pm', 'abc Road', 'surendranagar', 1),
-(4, 1, 'GJ12AK2345', 1, 'Missing PUC, ', 150, '2021-03-18', '10:11 PM', 'abc Chok', 'Ahmedabad', 1),
-(5, 1, 'GJ13AH3421', 1, 'Wrong Side Driving, ', 500, '2021-03-18', '10:14 PM', 'Yk Road', 'surendranagar', 1),
-(6, 1, 'GJ13AK2345', 1, 'Missing Driving License, ', 300, '2021-03-18', '10:17 PM', 'Malar Chok', 'Surendranagar', 1),
-(7, 1, 'GJ13JJ4012', 1, 'Over Speed, ', 100, '2021-03-19', '09:31 AM', 'vs road', 'Surendranagar', 1);
 
 -- --------------------------------------------------------
 
@@ -177,14 +144,6 @@ CREATE TABLE `police_station` (
 -- Dumping data for table `police_station`
 --
 
-INSERT INTO `police_station` (`ps_id`, `name`, `password`, `address`, `city`, `state`, `email`, `contact_no`) VALUES
-(1, 'A division', '@Ads1234', 'A division, Nr. Tagore Bagh', 'Surendranagar', 'Gujarat', 'adivisionpolicestation@gmail.com', '9988998811'),
-(2, 'Vastrapur', '@Vsp1234', 'Doordarshan Char Rasta, Vastrapur', 'Ahmedabad', 'Gujarat', 'vastrapurpolicestation@gmail.com', '9988998822'),
-(3, 'Karol bagh', '@Kbh1234', '2682/1, Ajmal Khan Rd, Block 46, Karol Bagh', 'Delhi', 'Delhi', 'karolbaghpolicestation@gmail.com', '9988998833'),
-(4, 'Amroli', '@Arl1234', 'Near Fire Station, Sayan Rd, Amroli Char Rasta,Amroli', 'Surat', 'Gujarat', 'amrolipolicestation@gmail.com', '9988998844'),
-(5, 'Andheri', '@Adr1234', 'Sahar Road, Opp. Andheri Railway Station, Andheri East', 'Mumbai', 'Maharashtra', 'andheripolicestation@gmail.com', '9988998855'),
-(6, 'Pratap Nagar', '@Pnr1234', 'Airport Rd, Pratap Nagar', 'Udaipur', 'Rajasthan', 'pratapnagarpolicestation@gmail.com', '9988998866'),
-(7, 'paldi', '@Paldi1234', 'abc building, Paldi', 'Ahmedabad', 'Gujarat', 'paldipolicestation@gmail.com', '9898598985');
 
 -- --------------------------------------------------------
 
@@ -238,22 +197,6 @@ CREATE TABLE `register_user` (
 -- Dumping data for table `register_user`
 --
 
-INSERT INTO `register_user` (`user_id`, `photo`, `name`, `password`, `birthdate`, `gender`, `email`, `contact_no`, `address`, `city`, `state`) VALUES
-(1, '../driver_pic/1618422010903.jpg', 'Sanghavi Priyansh', '@Pns4299', '1999-02-04', 'MALE', 'priyansh4299@gmail.com', '7878044995', 'A/2, Yoginagar Society', 'Surendranagar', 'Gujarat'),
-(2, '../driver_pic/1618422010313.jpg', 'Deep Sanghavi', '@Dss1234', '2000-09-18', 'MALE', 'deep@gmail.com', '8568521592', 'crc block', 'New Delhi', 'Delhi'),
-(3, '../driver_pic/1616136011711.jpg', 'Shiwangi Jain', '@swj1234', '2000-02-16', 'FEMALE', 'shiwangi@gmail.com', '7564564565', 'abc apartment', 'Mumbai', 'Maharashtra'),
-(4, '../driver_pic/1616136011711.jpg', 'Nilesh Sanghavi', '@Abm1234', '1996-01-13', 'MALE', 'nilesh@gmail.com', '9725555449', 'abc apartment', 'Surendranagar', 'Gujarat'),
-(5, '../driver_pic/1616136011711.jpg', 'Rohit Shah', '@Srt1234', '1996-05-15', 'MALE', 'rohit@gmail.com', '9879879875', 'asd apartment', 'Surendranagar', 'Gujarat'),
-(6, '../driver_pic/1616136011712.jpg', 'Dhwani Gandhi', '@Dsg1234', '1999-02-04', 'FEMALE', 'Dhwani@gmail.com', '9525252525', 'asd apartment', 'Surat', 'Gujarat'),
-(7, '../driver_pic/1616136011711.jpg', 'Shreya Desai', '@Sdi1234', '1999-11-23', 'FEMALE', 'sneha@gmail.com', '7878578785', 'asd apartment', 'Ahmedabad', 'Gujarat'),
-(8, '../driver_pic/1616136011751.jpg', 'Chandarana Shubham', '@Csm1234', '2000-12-10', 'MALE', 'shubham@gmail.com', '9898977885', 'abc Building', 'Ahmedabad', 'Gujarat'),
-(9, '../driver_pic/1616136011801.jpg', 'Trivedi Hariom', '@Thi1234', '2000-09-18', 'MALE', 'hariom4444@gmail.com', '9898955225', 'A/5, abc Society', 'surendranagar', 'gujarat'),
-(10, '../driver_pic/1618422010456.jpg', 'Dave Ashutosh', '@Dam1234', '1997-03-06', 'MALE', 'ashutosh@gmail.com', '9797979797', 'abc Building', 'Mumbai', 'Maharashtra'),
-(11, '../driver_pic/1616136011756.jpg', 'Pithwa Pujan', '@Pjn1234', '1995-07-21', 'MALE', 'pujan@gmail.com', '8408402558', 'B/5 xyz society', 'Udaipur', 'Rajasthan'),
-(12, '../driver_pic/1616136011453.jpg', 'Parmar Parthiv', '@Ppv1234', '1997-05-19', 'MALE', 'parthiv@gmail.com', '9856985467', 'dfg Apartment', 'Pune', 'Maharashtra'),
-(13, '../driver_pic/1616136011256.jpg', 'Karan Zolapara', '@Kmz1234', '1994-03-09', 'MALE', 'karan@gmail.com', '7854856263', 'puspkunj Society', 'Jaipur', 'Rajasthan'),
-(14, '../driver_pic/1616136011711.jpg', 'Parth Vyas', '@Pvs1234', '1991-12-23', 'MALE', 'parth@gmail.com', '8978975256', 'qwe Society', 'New Delhi', 'Delhi'),
-(15, '../driver_pic/1616136011734.jpg', 'Kinita Sanghavi', '@Kns1234', '1995-03-12', 'FEMALE', 'kinita@gmail.com', '7944694494', 'swastik society', 'Udaipur', 'Rajasthan');
 
 -- --------------------------------------------------------
 
@@ -1245,15 +1188,6 @@ CREATE TABLE `tp_leave` (
 -- Dumping data for table `tp_leave`
 --
 
-INSERT INTO `tp_leave` (`l_id`, `tp_id`, `type`, `reason`, `from_date`, `to_date`, `day_type`, `permission`) VALUES
-(1, 1, 'C.L. (casual Leave)', 'personal reason', '2021-02-25', '2021-02-28', 'full', 'approved'),
-(2, 2, 'C.L. (casual Leave)', 'personal reason', '2021-02-26', '2021-02-27', 'full', 'pending'),
-(3, 3, 'P.L. (Privileged Leave)', 'maraige', '2021-03-13', '2021-03-17', 'full', 'pending'),
-(4, 5, 'P.L. (Privileged Leave)', 'maraige', '2021-03-24', '2021-03-29', 'full', 'reject'),
-(5, 4, 'L.W.P. (Leave Without Pay)', 'medial ', '2021-03-07', '2021-03-08', 'full', 'approved'),
-(6, 1, 'L.W.P. (Leave Without Pay)', 'Marraige of cousine', '2021-04-01', '2021-04-04', 'Full ', 'reject'),
-(7, 1, 'L.W.P. (Leave Without Pay)', 'personal', '2021-04-19', '2021-04-20', 'Full ', 'approved'),
-(8, 1, 'S.L. (Sick Leave)', 'iel', '2021-05-01', '2021-05-04', 'Full', 'pending');
 
 -- --------------------------------------------------------
 
@@ -1281,15 +1215,6 @@ CREATE TABLE `traffic_police` (
 -- Dumping data for table `traffic_police`
 --
 
-INSERT INTO `traffic_police` (`tp_id`, `ps_id`, `photo`, `name`, `password`, `gender`, `birthdate`, `joindate`, `email`, `contact_no`, `address`, `city`, `state`) VALUES
-(1, 1, '../tpolice_pic/1618477146021.jpg', 'Sanghavi Priyansh', '@Pns4299', 'MALE', '1995-04-01', '2015-02-02', 'priyansh4299@gmail.com', '7878044995', 'A/2 Yoginagar', 'Surendranagar', 'Gujarat'),
-(2, 2, '../tpolice_pic/1616136011256.jpg', 'Zolapara Karan', '@Zkm1234', 'MALE', '1995-02-04', '2020-05-12', 'karan@gmail.com', '4564564564', 'ac,paladi', 'Ahmedabad', 'Gujarat'),
-(3, 3, '../tpolice_pic/1618422010313.jpg', 'Deep Sanghavi', '@Dps1234', 'MALE', '1990-02-02', '2015-03-05', 'deep@gmail.com', '2525252525', 'xyz building', 'New Delhi', 'Delhi'),
-(4, 6, '../tpolice_pic/1616136011712.jpg', 'Gandhi Dhwani', '@Dsg1234', 'FEMALE', '1989-12-06', '2014-03-01', 'dhwani@gmail.com', '7878787878', 'abc apartment', 'Udaipur', 'Rajasthan'),
-(5, 5, '../tpolice_pic/1618422010456.jpg', 'Dave Ashutosh', '@Mhm1234', 'MALE', '1999-12-10', '2020-02-12', 'Ashutosh@gmail.com', '8562650058', 'abc block', 'Mumbai', 'Maharashtra'),
-(6, 1, '../tpolice_pic/1616136011801.jpg', 'Trivedi Hariom', '@Thi1234', 'MALE', '1995-01-18', '2016-05-29', 'trivedihariom4444@gmail.com', '9879879875', 'xyz colony, Wadhwan', 'Surendanagar', 'Gujarat'),
-(7, 4, '../tpolice_pic/1616136011734.jpg', 'Sanghavi Kinita', '@Plk7890', 'MALE', '1999-02-04', '2020-02-02', 'priyansh4299@gmail.com', '7878044995', 'A/2, abc road', 'Surat', 'Gujarat'),
-(8, 1, '../tpolice_pic/1616136011751.jpg', 'Chandarana Shubham', '@Csm1234', 'MALE', '1995-04-04', '2016-10-21', 'shubham@gmail.com', '9879879875', 'Abc building', 'Surendranagar', 'Gujarat');
 
 --
 -- Indexes for dumped tables
