@@ -20,8 +20,8 @@ if($row=mysqli_fetch_array($rs))
 	 //$mail->SMTPSecure = 'tls';
 	 
 	 
-	$mail->Username = "smartlenscustomercare@gmail.com";
-	$mail->Password = "@Pns4299";
+	$mail->Username = "youremail@example.com";
+	$mail->Password = "password";
 	 
 	$mail->IsHTML(true); // if you are going to send HTML formatted emails
 	$mail->SingleTo = true; // if you want to send a same email to multiple users. multiple emails will be sent one-by-one.
